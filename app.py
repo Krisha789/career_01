@@ -1,7 +1,4 @@
-"""CareerCraft AI - Personalized Career Content Generator
-Stack: Python + Streamlit (UI) + Google Gemini API (AI) + SQLite (history) + python-docx (export)
-Pages: Home  |  Create  |  Dashboard  |  History
-"""
+
 import io
 import os
 import sqlite3
@@ -14,7 +11,7 @@ import streamlit as st
 from docx import Document
 from google import genai
 
-MODEL = "gemini-3.8-flash"   # check the Gemini docs for current model names
+MODEL = "gemini-3.8-flash"   
 FALLBACK_MODELS = ["gemini-flash-latest"]   # used if the main model is busy
 DB_FILE = "career.db"
 
